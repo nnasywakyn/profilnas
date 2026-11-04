@@ -72,16 +72,63 @@
       color: white;
       transform: translateY(-2px);
     }
+.contact-info { text-align: left; font-size: 14px; color: #4b6584; line-height: 2; }
+    .contact-info i { color: #d4ac0d; margin-right: 8px; width: 16px; }
+ .social-links { display: flex; justify-content: center; gap: 15px; margin-top: 30px; }
+    .social-btn { 
+      text-decoration: none; 
+      color: white; 
+      width: 45px; 
+      height: 45px; 
+      border-radius: 50%; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      font-size: 18px; 
+      transition: all 0.3s ease; 
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .social-btn:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.15); }
+    
+    .btn-email { background: #d4ac0d; }
+    .btn-instagram { background: #e1306c; }
+    .btn-github { background: #2f3640; }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Profil Mahasiswa</h1>
-    <h2>Nama:nasywa kayana</h2>
-    <p>Program Studi: Manajemen Informasi Komunikasi</p>
-    <p>Saya sedang belajar Cloud Computing.</p>
-    <p>Instagram:@nnasywakyn.</p>
-    <p>Email: mahasiswa@email.com</p>
+ <div class="card">
+    <!-- PENTING: Ganti foto-profil.jpg dengan nama file foto asli Anda di komputer -->
+    <img src="foto-profil.jpg" alt="Foto Eldaniz" class="profile-img">
+    
+    <h1>Eldaniz Yazzid Hatrawijaya</h1>
+    <div class="subtitle">Manajemen Informasi dan Komunikasi</div>
+    <p class="bio">Halo! Saya mahasigma yang antusias di dunia informasi dan teknologi. Saat ini sedang mendalami Cloud Computing dan senang mengubah ide menjadi karya digital yang bermanfaat.</p>
+    
+    <h3><i class="fa-solid fa-heart"></i> Hobi & Minat</h3>
+    <div class="tag-container">
+      <span class="tag">Cloud Computing</span>
+      <span class="tag">Web Development</span>
+      <span class="tag">Musik</span>
+      <span class="tag">Nonton Sepakbola</span>
+    </div>
+
+    <h3><i class="fa-solid fa-code"></i> Kemampuan</h3>
+    <div class="tag-container">
+      <span class="tag">Cloud Computing</span>
+      <span class="tag">HTML & CSS</span>
+      <span class="tag">Komunikasi & Presentasi</span>
+    </div>
+
+    <h3><i class="fa-solid fa-address-book"></i> Kontak</h3>
+    <div class="contact-info">
+      <div><i class="fa-solid fa-envelope"></i> eldanizyazzid@gmail.com</div>
+      <div><i class="fa-solid fa-location-dot"></i> Yogyakarta, Indonesia</div>
+    </div>
+
+    <div class="social-links">
+      <a href="mailto:eldanizyazzid@gmail.com" class="social-btn btn-email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://instagram.com" target="_blank" class="social-btn btn-instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://github.com" target="_blank" class="social-btn btn-github" title="GitHub"><i class="fa-brands fa-github"></i></a>
   </div>
 </body>
 </html>
