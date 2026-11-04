@@ -15,12 +15,18 @@
         
 
 body {
-    background: linear-gradient(135deg, #e6cc00, #e8e337);
+    background-color: #f7f5bc;
+    background-image: url("nanas.png");
+    background-repeat: repeat;
+    background-size: 900px auto;
+    animation: pineappleMove 40s linear infinite;
+
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px 20px;
+    overflow-x: hidden;
 }
 
 .card {
@@ -228,6 +234,15 @@ h1 {
     transform: scale(1.02);
     box-shadow: 0 5px 15px rgba(230, 204, 0, 0.25);
 }
+
+@keyframes pineappleMove {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 180px 120px;
+    }
+}
     </style>
 </head>
 <body>
@@ -248,7 +263,7 @@ h1 {
         <p class="bio">
             Halo! Saya Nasywa, mahasiswa semester 3 Program Studi Manajemen Informasi dan Komunikasi. Saya memiliki ketertarikan pada bidang komunikasi, media kreatif, dan produksi konten digital.
 
-Saya senang mengeksplorasi ide-ide baru, mempelajari hal-hal kreatif, serta mengembangkan kemampuan dalam bidang desain, penulisan, dan produksi media. Bagi saya, setiap proses merupakan kesempatan untuk belajar, mencoba, dan menghasilkan karya yang bermakna.
+Saya senang mengeksplorasi ide-ide baru, mempelajari hal-hal kreatif, serta mengembangkan kemampuan dalam bidang desain, penulisan, dan produksi media. 
         </p>
 
         <!-- Hobi & Minat -->
@@ -305,10 +320,10 @@ Saya senang mengeksplorasi ide-ide baru, mempelajari hal-hal kreatif, serta meng
         <div class="section-title">KONTAK</div>
         <div class="contact-info">
             <a href="mailto:aisyahnasywakayana1307@gmail.com" class="contact-btn">
-                📸 Instagram: @nnasywakyn
+                ✉️ Email: aisyahnasywakayana1307@gmail.com
             </a>
              <a href="https://www.instagram.com/@nnasywakyn/" target="_blank" class="contact-btn">
-                ✉️ Email: aisyahnasywakayana1307@gmail.com
+                📸 Instagram: @nnasywakyn
             </a>
              <a href="https://github.com/nnasywakyn" target="_blank" class="contact-btn">
                 💻 GitHub: @nnasywakyn
